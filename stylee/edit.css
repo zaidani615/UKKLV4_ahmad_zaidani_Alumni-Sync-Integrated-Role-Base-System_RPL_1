@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;                 
+    font-family: 'Segoe UI', sans-serif;     
+}
+
+body {
+    margin: 0;                              
+    padding: 0;                             
+    height: 100vh;                          
+    display: flex;                          
+    justify-content: center;                
+    align-items: center;                    
+    background: #1a1a1a;                    
+    position: relative;                     
+    overflow: hidden;                       
+}
+
+body::before {
+    content: "";                            
+    position: fixed;                        
+    top: 0;                                 
+    left: 0;                                
+    width: 100%;                            
+    height: 100%;                           
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('../img/smk-telkom.jpg') no-repeat center center; 
+    background-size: cover;                 
+    z-index: -1;                            
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(15px);            
+    -webkit-backdrop-filter: blur(15px);    
+    padding: 40px;                          
+    border-radius: 20px;                    
+    width: 450px;                           
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    text-align: center;                     
+    box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #fff;                            
+    letter-spacing: 2px;                    
+    margin-bottom: 35px;                    
+    font-weight: 500;                       
+    text-transform: uppercase;             
+}
+
+.input-group {
+    position: relative;                     
+    margin-bottom: 25px;                    
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5); 
+    display: flex;                          
+    align-items: center;                    
+}
+
+.input-group i {
+    position: absolute;                     
+    left: 5px;                              
+    color: #fff;                            
+    font-size: 16px;                        
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;                            
+    padding: 10px 10px 10px 35px;           
+    background: transparent !important;    
+    border: none !important;                
+    color: #fff !important;                 
+    font-size: 16px;                        
+    outline: none;                          
+    appearance: none;                       
+}
+
+select option {
+    background-color: #333;                 
+    color: #fff;                            
+}
+
+.button-group {
+    display: flex;                          
+    gap: 15px;                              
+    margin-top: 20px;                       
+}
+
+.btn-simpan {
+    flex: 2;                                
+    padding: 12px;                          
+    border: none;                           
+    border-radius: 25px;                    
+    background: #00AEEF;                    
+    color: white;                           
+    font-weight: bold;                      
+    cursor: pointer;                        
+    transition: 0.3s ease;                  
+}
+
+.btn-batal {
+    flex: 1;                                
+    padding: 12px;                          
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 25px;                    
+    background: transparent;                
+    color: white;                           
+    text-decoration: none;                  
+    font-size: 14px;                        
+    display: flex;                          
+    align-items: center;                    
+    justify-content: center;                
+    transition: 0.3s ease;                  
+}
+
+.btn-simpan:hover { 
+    background: #E02D27;                    
+    transform: scale(1.02);                 
+}
+
+.btn-batal:hover { 
+    background: rgba(255, 255, 255, 0.1);   
+}

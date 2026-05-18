@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;                
+    font-family: 'Poppins', 'Segoe UI', sans-serif; 
+}
+
+body {
+    margin: 0;                             
+    padding: 0;                            
+    min-height: 100vh;                     
+    display: flex;                         
+    justify-content: center;               
+    align-items: center;                   
+    background: #1a1a1a;                   
+    position: relative;                    
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url('../img/smk-telkom.jpg') no-repeat center center fixed; 
+    background-size: cover;                
+}
+
+.form-glass {
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(15px);            
+    -webkit-backdrop-filter: blur(15px);    
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;                    
+    padding: 40px;                          
+    width: 100%;                            
+    max-width: 450px;                       
+    box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+    color: white;                           
+    text-align: center;                     
+}
+
+.form-glass h3 {
+    margin-top: 0;                          
+    margin-bottom: 30px;                    
+    text-transform: uppercase;              
+    letter-spacing: 2px;                    
+    font-size: 22px;                        
+    font-weight: 500;                       
+}
+
+.input-group-custom {
+    position: relative;                     
+    margin-bottom: 25px;                    
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
+    display: flex;                          
+    align-items: center;                    
+}
+
+.input-group-custom i {
+    position: absolute;                     
+    left: 5px;                              
+    bottom: 12px;                           
+    font-size: 16px;                        
+    color: #fff;                            
+}
+
+.input-group-custom input, 
+.input-group-custom select, 
+.input-group-custom textarea {
+    width: 100%;                            
+    padding: 10px 10px 10px 35px;           
+    background: transparent !important;     
+    border: none !important;                
+    outline: none !important;               
+    color: white !important;                
+    font-size: 16px;                        
+    appearance: none;                       
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);        
+}
+
+select option {
+    background-color: #333;                 
+    color: #fff;                            
+}
+
+.form-scroll {
+    max-height: 300px;                      
+    overflow-y: auto;                       
+    padding-right: 10px;                    
+    margin-bottom: 20px;                    
+}
+
+.form-scroll::-webkit-scrollbar {
+    width: 6px;                             
+}
+
+.form-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);  
+    border-radius: 10px;                    
+}
+
+.form-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);   
+    border-radius: 10px;                    
+}
+
+.form-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 174, 239, 0.5);     
+}
+
+.btn-blue-light {
+    background: #00aeef;                    
+    color: white;                           
+    border: none;                           
+    padding: 12px;                          
+    width: 100%;                            
+    border-radius: 25px;                    
+    font-weight: bold;                      
+    cursor: pointer;                        
+    transition: 0.3s;                       
+    font-size: 16px;                        
+    margin-top: 10px;                       
+}
+
+.btn-blue-light:hover {
+    background: #cc0000;                    
+    transform: translateY(-2px);            
+    box-shadow: 0 5px 15px rgb(189, 3, 3);  
+}
+
+.btn-outline-white {
+    display: block;                         
+    text-align: center;                     
+    margin-top: 15px;                       
+    color: rgba(255, 255, 255, 0.8);        
+    text-decoration: none;                  
+    font-size: 14px;                        
+    transition: 0.3s;                       
+}
+
+.btn-outline-white:hover {
+    color: #fff;                            
+    text-decoration: underline;             
+}
